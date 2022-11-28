@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Projects</title>
+</head>
+<body>
+    <header>
+        <div class="header-main flex">
+            <div class="header-logo"><img src="../img/logo-header.svg"></div>
+            <div class="menu">
+                <ul class="menu-list flex">
+                    <li><a href="../index.html">Главная</a></li>
+                    <li class="active-menu"><a href="projects.html">Проекты</a></li>
+                    <li><a href="services.html">Услуги</a></li>
+                    <li><a href="blog.html">Блог</a></li>
+                    <li><a href="company-about.html">Компания</a></li>
+                </ul>
+            </div>
+            <div class="seti">
+                <ul class="seti-list flex">
+                    <li><img src="../img/instagram.svg"></li>
+                    <li><img src="../img/vk.svg"></li>
+                    <li><img src="../img/fb.svg"></li>
+                    <li><img src="../img/tw.svg"></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="page_of_project">
+            <div class="top_page">
+                <div class="top-string">
+                    <div class="navigation flex">
+                        <p>Главная</p>
+                        <p>></p>
+                        <p>Проекты</p>
+                        <p>></p>
+                        <p>Панорамная чилаут зона для чтения и отдыха</p>
+                    </div>
+                    <div class="adress flex">
+                        <img src="../img/mapmarker.svg">
+                        <p>Санкт-Петербург, Английский Пр.</p>
+                    </div>
+                </div>
+                <div class="carusel">
+                    <div class="container">
+                        <div class="mySlides">
+                          <div class="numbertext">1 / 6</div>
+                            <img src="../img/portfolio/interior-4.jpg" style="width:100%">
+                        </div>
+                      
+                        <div class="mySlides">
+                          <div class="numbertext">2 / 6</div>
+                            <img src="../img/portfolio/interior-5.1.jpg" style="width:100%">
+                        </div>
+                      
+                        <div class="mySlides">
+                          <div class="numbertext">3 / 6</div>
+                            <img src="../img/portfolio/interior-3.jpg" style="width:100%">
+                        </div>
+                      
+                        <div class="mySlides">
+                          <div class="numbertext">4 / 6</div>
+                            <img src="../img/portfolio/installation-1.jpg" style="width:100%">
+                        </div>
+                      
+                        <div class="mySlides">
+                          <div class="numbertext">5 / 6</div>
+                            <img src="../img/portfolio/interior-11.jpg" style="width:100%">
+                        </div>
+                      
+                        <div class="mySlides">
+                          <div class="numbertext">6 / 6</div>
+                            <img src="../img/portfolio/interior-1.jpg" style="width:100%">
+                        </div>
+                      
+                        <!-- Next and previous buttons -->
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                      
+                      
+                        <!-- Thumbnail images -->
+                        <div class="row">
+                          <div class="column">
+                            <img class="demo cursor" src="../img/portfolio/interior-4.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+                          </div>
+                          <div class="column">
+                            <img class="demo cursor" src="../img/portfolio/interior-5.1.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+                          </div>
+                          <div class="column">
+                            <img class="demo cursor" src="../img/portfolio/interior-3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+                          </div>
+                          <div class="column">
+                            <img class="demo cursor" src="../img/portfolio/installation-1.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+                          </div>
+                          <div class="column">
+                            <img class="demo cursor" src="../img/portfolio/interior-11.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+                          </div>
+                          <div class="column">
+                            <img class="demo cursor" src="../img/portfolio/interior-1.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+                          </div>
+                        </div>
+                      </div>
+                      <script>
+                        var slideIndex = 1;
+                        showSlides(slideIndex);
+
+                        function plusSlides(n) {
+                        showSlides(slideIndex += n);
+                        }
+
+                        function currentSlide(n) {
+                        showSlides(slideIndex = n);
+                        }
+
+                        function showSlides(n) {
+                        var i;
+                        var slides = document.getElementsByClassName("mySlides");
+                        var dots = document.getElementsByClassName("demo");
+                        if (n > slides.length) {slideIndex = 1}
+                        if (n < 1) {slideIndex = slides.length}
+                        for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";
+                        }
+                        for (i = 0; i < dots.length; i++) {
+                            dots[i].className = dots[i].className.replace(" active", "");
+                        }
+                        slides[slideIndex-1].style.display = "block";
+                        dots[slideIndex-1].className += " active";
+                        captionText.innerHTML = dots[slideIndex-1].alt;
+                        }
+                      </script>
+                </div>
+            </div>
+            <div class="main-blok-of-project">
+                <h2>Панорамная чилаут зона для чтения и отдыха</h2>
+                <div class="flex opisanie">
+                    <div class="opisanie-of-project">
+                        <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных.</p>
+                        <img src="../img/plan 1.jpg" alt="">
+                        <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных.</p>
+                        <img src="../img/picture 1.jpg" alt="">
+                        <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных.</p>
+                        <img src="../img/portfolio/interior-5.2.jpg" alt="">
+                        <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных.</p>
+                        <img src="../img/portfolio/house-1.jpg" alt="">
+                        <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных.</p>
+                    </div>
+                    <div class="architector">
+                        <div class="autor">
+                            <p class="arch_info">Старший архитектор</p>
+                            <img src="../img/autor.svg">
+                            <p class="name">Евгений Григорьев</p>
+                            <p class="arch_about">Выпускник гарвардского университета, кандидат наук, профессиональный архитектор. В общей сложности реализовал более 120 проектов.</p>    
+                        </div>
+                        <div class="info_about">
+                            <p class="arch_info">Информация о проекте</p>
+                            <div class="flex info">
+                                <p class="left">Заказчик</p>
+                                <p class="right">Частное лицо</p>
+                            </div>
+                            <div class="flex info">
+                                <p class="left">Площадь</p>
+                                <p class="right">24 кв. м.</p>
+                            </div>
+                            <div class="flex info">
+                                <p class="left">Время разработки</p>
+                                <p class="right">3 недели</p>
+                            </div>
+                            <div class="flex info">
+                                <p class="left">Высота потолка</p>
+                                <p class="right">3.4 метра</p>
+                            </div>
+                            <div class="flex info">
+                                <p class="left">Толщина стен</p>
+                                <p class="right">45 см.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer_blok flex">
+            <div class="about_us">
+                <img src="../img/logo-footer.svg" class="logo_footer">
+                <h3>Коротко о нас</h3>
+                <p class="about_us-text">Мы досконально прорабатываем, а затем обсуждаем с нашими клиентами внешний вид каждого изделия. Мы крайне редко повторяемся, ведь мы знаем, что вы цените индивидуальность и не готовы довольствоваться готовыми решениями.</p>
+            </div>
+            <div>
+                <nav class="flex footer_nav">
+                    <ul class="menu_footer">
+                        <li><h3>Меню</h3></li>
+                        <li><img src="../img/decoration.svg" class="line"></li>
+                        <li><a href="../index.html">Главная</a></li>
+                        <li><a href="./projects.html">Проекты</a></li>
+                        <li><a href="./services.html">Услуги</a></li>
+                        <li><a href="./blog.html">Блог</a></li>
+                        <li><a href="./company-about.html">Компания</a></li>
+                    </ul>
+                    <ul class="uslugi_footer">
+                        <li><h3>Услуги</h3></li>
+                        <li><img src="../img/decoration.svg" class="line"></li>
+                        <li><a href="">Дизайн интерьера</a></li>
+                        <li><a href="">Проектирование</a></li>
+                        <li><a href="">Поставка дерева</a></li>
+                        <li><a href="">Ремонт</a></li>
+                        <li><a href="">Концепт</a></li>
+                        <li><a href="">Выезд мастера</a></li>
+                    </ul>
+                    <div>
+                        <h3 class="we_society">Мы в соцюсетях</h3>
+                        <img src="../img/decoration.svg" class="line">
+                        <p>Подпишитесь на нас в социальных сетях, чтобы не пропустить выход новых невероятных проектов, разработанных для наших клиентов по всему миру.</p>
+                        <div class="soc_seti flex">
+                            <div><img src="../img/inst.svg" class="footer_seti"></div>
+                            <div><img src="../img/vk-footer.svg"></div>
+                            <div><img src="../img/fb-footer.svg"></div>
+                            <div><img src="../img/tw-footer.svg"></div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
